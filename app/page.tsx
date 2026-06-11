@@ -1,7 +1,14 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-dr-void text-dr-concrete font-sans flex flex-col justify-between">
-      
+      {/* --- BRAND HEADER WORDMARK --- */}
+<header className="w-full flex justify-center py-12 px-6">
+  <img 
+    src="/dr-wordmark.svg" 
+    alt="Drifting Roots Wordmark" 
+    className="w-full max-w-sm h-auto drop-shadow-2xl" 
+  />
+</header>
       {/* Hero Section: The Manifesto */}
       <section className="flex-grow flex flex-col items-center justify-center text-center p-8 max-w-4xl mx-auto space-y-8">
         <h2 className="text-sm uppercase tracking-[0.2em] text-dr-accent font-bold border-b-2 border-dr-accent pb-1">
@@ -56,9 +63,13 @@ export default function Home() {
 
             {/* Card 2 */}
             <div className="border border-dr-asphalt bg-dr-void/50 p-8 flex flex-col justify-between h-96 group hover:border-dr-concrete transition-all">
-              <div className="w-full h-48 bg-dr-asphalt flex items-center justify-center text-[10px] tracking-widest text-dr-concrete/30 uppercase font-bold">
-                [Visual Asset: Punk Stamp Pending]
-              </div>
+              <div className="w-full max-w-xs mx-auto overflow-hidden flex justify-center items-center">
+  <img 
+    src="/dr-punk-stamp-final.svg" 
+    alt="Drifting Roots Punk Stamp" 
+    className="w-full h-auto object-contain invert" 
+  />
+</div>
               <div className="space-y-2">
                 <h4 className="font-bold text-lg text-dr-bone group-hover:text-dr-accent transition-all">Chain Breaker Hoodie</h4>
                 <p className="text-xs text-dr-concrete/70 uppercase">Standard Fit • Pigment Dyed</p>
